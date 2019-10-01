@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var mathang , pt , tien , i , n  ;
+  tien = parseFloat("0");
+  n = parseInt(prompt("Nhập số mặt hàng bán được"));
+  for(i=1;i<=n;i++) {
+      mathang = parseFloat(prompt("Nhập giá của sản phẩm " + i));
+      pt = parseFloat(prompt("Nhập hoa hồng % lãi của mặt hàng " + i));
+      tien += mathang * (pt / 100);
+  }
+  alert("Số tiền nhận được là : "+tien);
+      </script>
+</body>
+</html>

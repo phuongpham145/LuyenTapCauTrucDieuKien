@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var n , i , hk , gk , tb , diem , tong ;
+    tong = parseFloat("0")
+    n = parseFloat(prompt("Nhập số môn :"));
+    for(i=1;i<=n;i++){
+        diem = parseFloat(prompt("Nhập điểm môn " + i ));
+        tong += diem ;
+    }
+    gk = parseFloat(prompt("Nhập điểm giữa kì "));
+    tong += gk ;
+    hk = parseFloat(prompt("Nhập điểm học kì "));
+    tong += hk ;
+    tb = tong / (n+2);
+    if(tb>=8) alert("Học Lực giỏi");
+    else if(tb <5 ) alert("Học sinh yếu");
+    else if(tb >= 5 && tb <=6.5) alert("Học Sinh Trung bình");
+    else alert("Học sinh khá");
+</script>
+</body>
+</html>
